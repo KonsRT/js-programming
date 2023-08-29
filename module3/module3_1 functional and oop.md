@@ -294,3 +294,18 @@ function withDefaultParams(number = 10) {
 This approach improves the developer experience of my code, because I no longer have to worry about feeding the **WithDefaultParameters** class with all the arguments. For quick tests, this is great, because I no longer need to worry about passing the proper arguments.
 
 Additionally, this approach really shines when building inheritance hierarchies using classes, as it makes it possible **to provide only the custom properties in the sub-class**, while still **accepting all the default parameters from the super-class constructor**.
+
+## Additional resources
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+[Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) 
+
+[Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+[Object-oriented programming](https://css-tricks.com/the-flavors-of-object-oriented-programming-in-javascript/)  
+
+[Regular Expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+[RegExp object in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
