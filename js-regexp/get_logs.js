@@ -9,12 +9,37 @@
 // - создать массив объектов по вышеописанной структуре (хост юзер время звпрос)
 // - показать таблицу из 4 колонок с заголовками с (первыми 5-10) объектами
 
-const pattern = /(\d+.\d+.\d+.\d+) - ([\w]*[\d]*|[-]) \[(.*)\] \"(.*)\"/
 
-const str = ""
+document.getElementById('openButton').addEventListener('click', function() {
+    const fileInput = document.getElementById('fileInput');
+    const fileContentsDiv = document.getElementById('fileContents');
 
-str.matchAll(pattern)
+    const selectedFile = fileInput.files[0];
+    if (!selectedFile) {
+        fileContentsDiv.textContent = 'Файл не выбран.';
+        return;
+    }
 
-function readLogs() {
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        const fileContents = event.target.result;
+        const lines = fileContents.split('\n').filter(line => line.trim() !== '');
     
-}
+
+        const pattern = /(\d+.\d+.\d+.\d+) - ([\w]*[\d]*|[-]) \[(.*)\] \"(.*)\"/
+        const log_array = []
+
+        for (const line of lines) {
+            const lineMatches = Array.from(line.MatchAll(pattern));
+            log_array.push(...lineMatches)
+        }
+        const matchesText = log_array.map(match => match[0]).join(', ');
+        fileContentsDiv.textContent = 'Совпадения: ' + matchesText;
+    }
+
+});
+
+
+
+
+
