@@ -33,6 +33,8 @@ console.log(rest);
 
 ## For of loops and objects
 
+The `for...of` loop is designed to iterate over the values of **iterable** objects like arrays, strings, maps, sets, etc., but **not regular objects**.
+
 ```js
 const colors = ['red','orange','yellow']
 for (var color of colors) {
@@ -97,7 +99,7 @@ testBracketDynamicAccess();
 
 Цикл `for...of` удобен для работы с элементами коллекций, так как он автоматически обходит только сами элементы, не требуя явного обращения к индексам.
 
-```
+```js
 const car = {
     engine : true,
     streeting : true,
@@ -304,3 +306,16 @@ console.log(shoppingCart);
 
 **More examples** in `module3\SpreadAndRest.js` file
 
+## Additional resources
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+[Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) 
+
+[Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) 
+
+[Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) 
+
+[Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) 
+
+[JavaScript data structures](https://data-flair.training/blogs/javascript-data-structures/)  
