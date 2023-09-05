@@ -73,7 +73,7 @@ target.addEventListener('click', handleClick)
 
 Now when click on page:
 
-![](notesimg\01.png)
+![](noteimgs\01.png)
 
 An alternative way to listen for events is by using HTML event attributes
 
@@ -90,7 +90,7 @@ Go to Elements and change html:
 <h1 onclick="handleClick2()">Example Domain</h1>
 ```
 
-![](notesimg\02.png)
+![](noteimgs\02.png)
 
 ### Exercise: Web page content update
 
@@ -126,3 +126,54 @@ input.addEventListener('change', function() {
 })
 ```
 
+### JavaScript Object Notation - JSON
+
+Thus, the two major reasons for the JSON format becoming the dominant data interchange format that it is today is two-fold:
+
+- First, it's very lightweight, with syntax very similar to "a stringified JavaScript object". You'll learn more about the specifics of this later.
+- Second, it's easier to handle in JavaScript code, since, JSON, after all, is *just JavaScript.*
+
+JSON can work with some primitives and some complex data types:
+
+- primitive values: strings, numbers, bolleans, null
+- complex values: objects and arrays (no functions!)
+- Objects have double-quoted strings for all keys
+- Properties are comma-delimited both in JSON objects and in JSON arrays, just like in regular JavaScript code
+- String properties must be surrounded in double quotes.
+
+You can use object literals and array literals, as long as you follow the above rules
+
+```js
+// from JSON
+'{"greeting":"hello"}'
+const jsonStr = '{"greeting":"hello"}'
+JSON.parse(jsonStr)
+const aPlaneObj = JSON.parse(jsonStr)
+aPlaneObj.greeting = 'hi'
+
+// to JSON
+const data = {
+    firstName: "John", 
+    lastName: "Doe",
+    greeting: "Hello",
+}
+JSON.stringify(data)
+```
+
+# Additional resources
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+[MDN: Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+
+[Nodejs.org official docs on CommonJS](https://nodejs.org/api/modules.html#modules-commonjs-modules)
+
+[MDN: DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+[MDN: Document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+
+[MDN: Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+[MDN: EventTarget.addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+[MDN: Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) 
