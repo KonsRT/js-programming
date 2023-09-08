@@ -137,3 +137,19 @@ Jest
 * snapshot testing 
 
 Snapshot testing is used by developers to verify that there are no regressions in the DOM of our apps after some changes to the code base are made
+
+### Writing tests with Jest
+
+In terminal:
+
+```bash
+# init npm in the folder for this project
+npm init -y
+# install jest localy
+npm install --save-dev jest
+# run tests in tis folder 
+npm run test
+```
+
+Jest runs tests for code in your current project to verify the expected output
+
