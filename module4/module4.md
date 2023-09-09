@@ -153,3 +153,70 @@ npm run test
 
 Jest runs tests for code in your current project to verify the expected output
 
+## TDD 
+
+Test-Driven Development - steamlined process of writing code that will satisfy some requirements
+
+Red - Green - Refactor
+
+![](noteimgs\tdd1.png)
+
+![tdd2](noteimgs\tdd2.png)
+
+**TDD example**
+
+```js
+test('returns true if statusOfKeys exists', function() {
+	expect(statusOfKeys).toBeDefined()
+})
+```
+
+test failed - function donesn't exist. write function
+
+```
+function statusOfKeys() {}
+```
+
+TDD rule: write as little code as possible to make the test pass
+
+```
+const statusOfKeys = require('./statusOfKeys');
+const spyConsoleLog = jest.spyOn(console,'log');
+spyConsoleLog.mockImplementation(keys=> keys)
+
+test('returns true if statusOfKeys exists', function() {
+	expect(statusOfKeys).toBeDefined()
+})
+
+test('test console log inside statusOfKeys', function() {
+	statusOfKeys(true);
+	expect(console.log).toBeCalled();
+	expect(spyConsoleLog.mock.calls[0][0]).toBe(true);
+	spyConsoleLog.mockReset();
+	spyConsoleLog.mockRestore();	
+})
+```
+
+```
+function statusOfKeys(keys) {
+	console.log(keys);
+}
+```
+
+# Additional resources
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+[MDN: Server-side website programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
+
+[Nodejs.org docs website](https://nodejs.org/api/documentation.html)
+
+[Jest testing framework website](https://jestjs.io/)
+
+[Cypress testing framework](https://www.cypress.io/)
+
+[npm website](https://www.npmjs.com/)
+
+[Unit testing in JavaScript](https://www.browserstack.com/guide/unit-testing-in-javascript)
+
+  

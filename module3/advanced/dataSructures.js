@@ -25,6 +25,8 @@ nums.filter( function(num) {
     return num/10;
 }); //[1, 2, 3, 4, 5]
 
+// [0, 10, 20, 30, 40, 50].map( num => num/10 ); 
+
 // convert an object to an array
 const resuult = [];
 const drone = {
