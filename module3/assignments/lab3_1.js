@@ -1,3 +1,4 @@
+// building functional program
 
 function consoleStyler(color, background, fontSize, txt) {
     var message = "%c" + txt;

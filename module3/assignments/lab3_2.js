@@ -1,3 +1,5 @@
+// building oop program
+
 class Person {
     constructor (name = 'Tom', age = 20, energy = 100) {
         this.name = name;
