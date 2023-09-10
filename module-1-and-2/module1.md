@@ -1,6 +1,6 @@
 # Intro to Java Script
 
-Course 00 of 00 in the Meta Front-End Developer Professional Certificate
+Course 2 of 9 in the Meta Front-End Developer Professional Certificate
 
 # Module 1
 

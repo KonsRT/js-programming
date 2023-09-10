@@ -1,6 +1,6 @@
 # Intro to Java Script
 
-Course 5 of 9 in the Meta Front-End Developer Professional Certificate
+Course 2 of 9 in the Meta Front-End Developer Professional Certificate
 
 # Module 2_2 Error Handling
 

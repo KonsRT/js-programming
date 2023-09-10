@@ -1,3 +1,7 @@
+# Intro to Java Script
+
+Course 2 of 9 in the Meta Front-End Developer Professional Certificate
+
 ## JavaScript in the Browser
 
 ### JavaScript modules

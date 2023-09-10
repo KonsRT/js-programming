@@ -1,3 +1,7 @@
+# Intro to Java Script
+
+Course 2 of 9 in the Meta Front-End Developer Professional Certificate
+
 # Constructors
 
 JavaScript has a number of built-in object types, such as:
