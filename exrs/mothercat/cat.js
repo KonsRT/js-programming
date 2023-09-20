@@ -13,10 +13,21 @@ fetch(requestURL)
 function displayCatInfo(catString) {
   let total = 0;
   let male = 0;
+  let counter = 0;
+  // Add your code here
+  const cats = JSON.parse(catString)
 
-// Add your code here
-
-// Don't edit the code below here!
+  for (const cat of cats) {   
+    motherInfo += cat.name + ', ';
+    for (const kitten of cat.kittens) {
+      total += 1;
+      if (kitten.gender == 'm') {
+        male += 1;
+      }
+    }
+  }
+  kittenInfo = `There are ${total} kitten, ${male} are male and ${total-male} are female.`
+  // Don't edit the code below here!
 
   para1.textContent = motherInfo;
   para2.textContent = kittenInfo;
