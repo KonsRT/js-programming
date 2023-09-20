@@ -18,7 +18,14 @@ function displayCatInfo(catString) {
   const cats = JSON.parse(catString)
 
   for (const cat of cats) {   
-    motherInfo += cat.name + ', ';
+    counter += 1;
+    if (counter < Object.keys(cats).length - 1 ) {
+      motherInfo += cat.name + ', ';
+    } else if (counter == Object.keys(cats).length -1 ) {
+      motherInfo += cat.name + ' and '; 
+    } else {
+      motherInfo += cat.name + '.'; 
+    }
     for (const kitten of cat.kittens) {
       total += 1;
       if (kitten.gender == 'm') {
